@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+body{
+    background: #dff6ff;
+}
+
+h1, h2{
+    font-family: "Fjalla One", sans-serif;
+}
+
+p{
+    font-family: "Lato", sans-serif;
+}
+
+header{
+    text-align: center;
+    border-bottom: solid 6px rgba(19, 77, 84, 0.388);
+    margin-bottom: 50px; /* Margen del borde hacia afuera*/
+    padding: 50px;       /* Margen del borde hacia adentro*/
+}
