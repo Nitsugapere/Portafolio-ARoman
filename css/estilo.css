@@ -16,5 +16,15 @@ header{
     text-align: center;
     border-bottom: solid 6px rgba(19, 77, 84, 0.388);
     margin-bottom: 50px; /* Margen del borde hacia afuera*/
-    padding: 50px;       /* Margen del borde hacia adentro*/
+    padding: 50px;       /* Margen interno*/
+}
+
+#foto-perfil{
+    border-radius: 20px;
+}
+
+article{
+    border: solid #980e0e 2px;
+    width: 30%;
+    float: left;
 }
