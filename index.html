@@ -13,15 +13,21 @@
             <p>Desarrollador fullstack | Estudiante de Ingeniería en TI</p>
         </header>
 
+        <nav id="menu-principal">
+            <ul>
+                <li><a href="#bienvenida">Inicio</a></li> <!-- a es para enlaces -->
+                <li><a href="#sobre-mi">Sobre mí</a></li>
+                <li><a href="#habilidades">Mi Experiencia</a></li>
+                <li><a href="#contacto">Contáctame</a></li>
+            </ul>
+        </nav>
+
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mí</a>
-            <a href="#">Mi Experiencia</a>
-            <a href="#">Contáctame</a>
+            <button>Negro</button>
         </nav>
 
         <main>
-            <section>
+            <section id="bienvenida">
                 <h2>Bienvenidos a mi portafolio Profesional</h2>
                 <p> Soy <mark>AGUSTÍN-PADRE ROMÁN MARTÍNEZ</mark> me especializo en <strong>Tecnologías de la información</strong> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
                 <p><small>Mi frase favorita</small> es <em>"Muchas </em> Grasas"</p>
@@ -32,46 +38,91 @@
                 </aside>
 
             </section>
-            <section>
+            <section id="experiencia">
                 <h2>Experiencia Profesional</h2>
-                <article>
-                    <h3>Proyecto Integrador I</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
-                    <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                    <ul>
-                        <li>Tecnologías: .NET</li>
-                        <li>Gestión de inventarios</li>
-                        <li>Basado en las ODS</li>
-                        <li>Trabajo en equipo</li>
-                        
-                    </ul>
-                </article>
+                <div id="lista-proyecto">
+                    <article class="Proyecto">
+                        <h3>Proyecto Integrador I</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
+                        <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
+                        <ul>
+                            <li>Tecnologías: .NET</li>
+                            <li>Gestión de inventarios</li>
+                            <li>Basado en las ODS</li>
+                            <li>Trabajo en equipo</li>
+                        </ul>
+                    </article>
 
-                <article>
-                    <h3>Proyecto Integrador II</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
-                    <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                    <ul>
-                        <li>Tecnologías: .NET</li>
-                        <li>Gestión de inventarios</li>
-                        <li>Basado en las ODS</li>
-                        <li>Trabajo en equipo</li>
-                        
-                    </ul>
-                </article>
+                    <article class="Proyecto">
+                        <h3>Proyecto Integrador II</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
+                        <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
+                        <ul>
+                            <li>Tecnologías: .NET</li>
+                            <li>Gestión de inventarios</li>
+                            <li>Basado en las ODS</li>
+                            <li>Trabajo en equipo</li>
+                        </ul>
+                    </article>
 
-                <article>
-                    <h3>Proyecto Integrador III</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
-                    <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                    <ul>
-                        <li>Tecnologías: .NET</li>
-                        <li>Gestión de inventarios</li>
-                        <li>Basado en las ODS</li>
-                        <li>Trabajo en equipo</li>
-                        
-                    </ul>
-                </article>
+                    <article class="Proyecto">
+                        <h3>Proyecto Integrador III</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
+                        <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
+                        <ul>
+                            <li>Tecnologías: .NET</li>
+                            <li>Gestión de inventarios</li>
+                            <li>Basado en las ODS</li>
+                            <li>Trabajo en equipo</li>
+                        </ul>
+                    </article>
+                </div>
+            </section>
+
+            <section id="habilidades">
+                <h2>Habilidades y Competencias</h2>
+                <h3>Lenguajes y Tecnología que manejo</h3>
+                <ul class="Tecnologia">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Js</li>
+                    <li>C#</li>
+                </ul>
+                <h3>Niveles de dominio</h3>
+                <div>
+                    <label>HTML</label>
+                    <progress max="100%" value="80%">80%</progress>
+                </div>
+                <div>
+                    <label>CSS</label>
+                    <progress max="100%" value="60%">60%</progress>
+                </div>
+                <div>
+                    <label>Js</label>
+                    <progress max="100%" value="80%">20%</progress>
+                </div>
+            </section>
+
+            <section id="contacto">
+                <div class="campos">
+                    <form>
+                        <label>Nombre Completo</label>
+                        <input type="text" value="" placeholder="Nombre completo">
+                    </form>
+                </div>
+                <div class="campos">
+                    <form>
+                        <label>Correo Electrónico</label>
+                        <input type="email" value="" placeholder="ejemplo@gmail.com" required>
+                    </form>
+                </div>
+                <div class="campos">
+                    <label>Mensaje</label>
+                    <textarea type="mensaje" placeholder="Escribe algo..."></textarea>
+                </div>
+                <div class="campos">
+                    <button type="submit">Enviar</button>
+                </div>
             </section>
         </main>
 
@@ -79,7 +130,6 @@
         <footer>
             <p>&copy; 2025 Todos los derechos reservados</p>
             <address>Cancún, QRoo, México</address>
-        </footer>
-        
+        </footer> 
     </body>
 </html>

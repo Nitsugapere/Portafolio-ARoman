@@ -1,30 +1,142 @@
 @import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 
-body{
-    background: #dff6ff;
+* {
+    margin: auto;
+}
+
+body {
+    background: #0f0f0f; 
+    color: #ffffff; 
 }
 
 h1, h2{
     font-family: "Fjalla One", sans-serif;
+    color: #00ffff; 
 }
 
 p{
     font-family: "Lato", sans-serif;
 }
-
-header{
+header {
     text-align: center;
-    border-bottom: solid 6px rgba(19, 77, 84, 0.388);
-    margin-bottom: 50px; /* Margen del borde hacia afuera*/
-    padding: 50px;       /* Margen interno*/
+    border: solid #00ffff; 
+    margin-top: 60px;
+    padding-bottom: 20px;
+    background: #1a1a1a; 
+
 }
 
-#foto-perfil{
-    border-radius: 20px;
+#menu-principal {
+    background-color: #1a1a1a; 
+    padding: 10px 20px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
 }
 
-article{
-    border: solid #980e0e 2px;
+#menu-principal ul {
+    list-style-type: none;
+    display: flex;
+}
+
+#menu-principal a {
+    text-decoration: none;
+    color: #ff00ff; 
+    font-size: 20px;
+}
+
+#menu-principal a:hover {
+    background-color: #ff00ff; 
+    color: #000000; 
+}
+
+#Bienvenida {
+    background-color: #1a0033; 
+    padding: 30px;
+}
+
+#Foto-perfil {
+    border-radius: 2px;
+}
+
+#experiencia {
+    background-color: #1a0033; 
+    padding: 30px 40px;
+    border-top: solid #00ffff; 
+
+}
+
+#lista-proyecto {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.Proyecto {
+    border: solid #ff00ff 5px; 
     width: 30%;
-    float: left;
+    border-radius: 10px;
+    padding: auto;
+    background: #1a1a1a; 
+}
+
+#habilidades {
+    padding: 20px 30px;
+    background-color: #0f0f0f; 
+}
+
+.Tecnologia {
+    list-style: none;
+    display: flex;
+    margin-left: 0;
+    gap: 20PX;
+}
+
+.Tecnologia li {
+    background-color: #ff00ff; 
+    color: #000000; 
+    padding: 12px 20px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+progress {
+    width: 10%;
+    height: 25px;
+    border-radius: 5px;
+    margin: 10px 0;
+}
+#contacto{
+    padding: 30px 20px;
+    background-color: #1a0033; 
+    border: solid 5px #00ffff; 
+    
+}
+#contacto label{
+    font-size: 20px;
+    color: #ffffff; 
+}
+
+#contacto input, textarea{
+    font-size: 20px;
+    border: solid 1px #ff00ff; 
+    padding: 10px;
+    width: 30% 0;
+    background: #1a1a1a; 
+    color: #ffffff; 
+}
+#contacto button{
+    background-color: #ff00ff; 
+    color: #000000; 
+    padding: 20px 30px;
+    border: none;
+    border-radius: 5px;
+    border: none;
+    width: 200px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.campos{
+    clear: both;
 }
