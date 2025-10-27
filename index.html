@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Portafolio Personal</title>
         <link rel = "stylesheet" href = "css/estilo.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     </head>
     <body>
         <header>    
@@ -22,114 +23,141 @@
             </ul>
         </nav>
 
-        <nav>
-            <button>Negro</button>
-        </nav>
-
+    
         <main>
-            <section id="bienvenida">
+        <section id="bienvenida">
+            <div class="contenido-texto">
                 <h2>Bienvenidos a mi portafolio Profesional</h2>
-                <p> Soy <mark>AGUSTÍN-PADRE ROMÁN MARTÍNEZ</mark> me especializo en <strong>Tecnologías de la información</strong> Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit...</p>
-                <p><small>Mi frase favorita</small> es <em>"Muchas </em> Grasas"</p>
-                <img src="images/Foto-Pefil.jpg" alt="Foto de perfil" id="foto-perfil" />
+                <p> Soy <mark>AGUSTÍN ROMÁN MARTÍNEZ</mark> me especializo en <strong>Tecnologías de la información</strong> con enfoque en el desarrollo de Software</p>
+                <p><small>Mi frase favorita</small> es <em>"Si puedes imaginarlo, puedes programarlo"</em></p>
+                <p><small>~ Alejandro Taboada - Programación ATS </small></p>
+        
                 <aside> 
                     <h3>¿Sabías que...?</h3>
-                    <p>Actualmente estudio la carrera de Tecnologías de la Información e Innovación Digital </p>
+                    <p>Actualmente estudio la carrera de Tecnologías de la Información e Innovación Digital</p>
                 </aside>
+            </div>
+    
+            <img src="images/Foto-Pefil.jpg" alt="Foto de perfil" id="foto-perfil" />
+        </section>
+        <section id="experiencia">
+            <h2>Experiencia Profesional</h2>
+            <div id="lista-proyecto">
 
-            </section>
-            <section id="experiencia">
-                <h2>Experiencia Profesional</h2>
-                <div id="lista-proyecto">
-                    <article class="Proyecto">
-                        <h3>Proyecto Integrador I</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
-                        <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                        <ul>
-                            <li>Tecnologías: .NET</li>
-                            <li>Gestión de inventarios</li>
-                            <li>Basado en las ODS</li>
-                            <li>Trabajo en equipo</li>
+                <article class="Proyecto">
+                    <h3>Certificados</h3>
+                    <div class="contenido-flexible">
+                        <p class="fecha">Febrero 2025 - Abril 2025</p>
+                         <ul>
+                            <li>Certificación en fundamentos Linux</li>
                         </ul>
-                    </article>
+                    </div>
+                    <i class="bi bi-tux"></i>
+                </article>
 
-                    <article class="Proyecto">
-                        <h3>Proyecto Integrador II</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
-                        <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                        <ul>
-                            <li>Tecnologías: .NET</li>
-                            <li>Gestión de inventarios</li>
-                            <li>Basado en las ODS</li>
-                            <li>Trabajo en equipo</li>
-                        </ul>
-                    </article>
+                <article class="Proyecto">
+                    <h3>Proyecto Integrador I</h3>
+                    <p>Desarrollo de una aplicación de escritorio, donde el usuario podrá acceder a un catálogo de animales dividido en tres categorías: Terrestres, Acuáticos y Aéreos.</p>
+                    <p>Mayo 2025 - Julio 2025</p>
+                    <ul>
+                        <li>Diseño de la interfaz con Windows Forms</li>
+                        <li>Implementación de CRUD completo</li>
+                        <li>Basado en las ODS</li>
+                        <li>Trabajo en equipo bajo metodología Design Thinking</li>
+                    </ul>
+                    <i class="bi bi-pc-display-horizontal"></i>
+                </article>
 
-                    <article class="Proyecto">
-                        <h3>Proyecto Integrador III</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsam similique molestiae minima! Ut dicta reiciendis libero, deleniti voluptatum accusantium modi laboriosam ea fuga adipisci provident assumenda autem alias dolores recusandae.</p>
-                        <time datetime="2025-05">Mayo 2025</time> - <time datetime="2025-07">Julio 2025</time>
-                        <ul>
-                            <li>Tecnologías: .NET</li>
-                            <li>Gestión de inventarios</li>
-                            <li>Basado en las ODS</li>
-                            <li>Trabajo en equipo</li>
-                        </ul>
-                    </article>
-                </div>
-            </section>
+                <article class="Proyecto">
+                    <h3>Portafolio Profesional</h3>
+                    <p>Desarrollo de un portafolio profesional donde pongo en práctica mis conocimientos en el desarrollo de páginas webs.</p>
+                    <p>Septiembre 2025 - Diciembre 2025</p>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                    <i class="bi bi-code-slash"></i>
+                </article>
 
-            <section id="habilidades">
-                <h2>Habilidades y Competencias</h2>
-                <h3>Lenguajes y Tecnología que manejo</h3>
-                <ul class="Tecnologia">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Js</li>
-                    <li>C#</li>
-                </ul>
-                <h3>Niveles de dominio</h3>
-                <div>
-                    <label>HTML</label>
-                    <progress max="100%" value="80%">80%</progress>
-                </div>
-                <div>
-                    <label>CSS</label>
-                    <progress max="100%" value="60%">60%</progress>
-                </div>
-                <div>
-                    <label>Js</label>
-                    <progress max="100%" value="80%">20%</progress>
-                </div>
-            </section>
+            </div>
+        </section>
 
-            <section id="contacto">
-                <div class="campos">
-                    <form>
-                        <label>Nombre Completo</label>
-                        <input type="text" value="" placeholder="Nombre completo">
-                    </form>
-                </div>
-                <div class="campos">
-                    <form>
-                        <label>Correo Electrónico</label>
-                        <input type="email" value="" placeholder="ejemplo@gmail.com" required>
-                    </form>
-                </div>
-                <div class="campos">
-                    <label>Mensaje</label>
-                    <textarea type="mensaje" placeholder="Escribe algo..."></textarea>
-                </div>
-                <div class="campos">
-                    <button type="submit">Enviar</button>
-                </div>
-            </section>
+        <section id="habilidades">
+            <h2>Habilidades y Competencias</h2>
+            <h3>Lenguajes y Tecnología que manejo</h3>
+            <ul class="Tecnologia">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Js</li>
+                <li>C#</li>
+            </ul>
+            
+            <h3>Niveles de dominio</h3>
+            <div>
+                <label>HTML</label>
+                <progress max="100" value="40">40%</progress>
+            </div>
+            <div>
+                <label>CSS</label>
+                <progress max="100" value="39">39%</progress>
+            </div>
+            <div>
+                <label>Js</label>
+                <progress max="100" value="28">28%</progress>
+            </div>
+            <div>
+                <label>C#</label>
+                <progress max="100" value="67">67%</progress>
+            </div>
+        </section>
+
+        <section id="contacto">
+            <div class="campos">
+                <form>
+                    <label>Nombre Completo</label>
+                    <input type="text" value="" placeholder="Nombre completo">
+                </form>
+            </div>
+
+            <div class="campos">
+                <form>
+                    <label>Correo Electrónico</label>
+                    <input type="email" value="" placeholder="ejemplo@gmail.com" required>
+                </form>
+            </div>
+
+            <div class="campos">
+                <label>Mensaje</label>
+                <textarea type="mensaje" placeholder="Escribe algo..."></textarea>
+            </div>
+
+            <div class="campos">
+                <button type="submit">Enviar</button>
+            </div>
+
+        </section>
         </main>
 
         <!-- PIE DE LA PÁGINA -->
         <footer>
+            <div class="iconos-footer">
+                <a href="www.linkedin.com/in/agustin-roman-martinez-8856a7394" class="icono-footer">
+                    <i class="bi bi-linkedin"></i>
+                </a>
+                <a href="https://github.com/Nitsugapere" class="icono-footer">
+                    <i class="bi bi-github"></i>
+                </a>
+                <a href="https://www.facebook.com/share/1DNcQXhxu2/" class="icono-footer">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="https://www.instagram.com/agustinroman489?igsh=cHJoM3dmdWxpdngw" class="icono-footer">
+                    <i class="bi bi-instagram"></i>
+                </a>
+            </div>
+            
             <p>&copy; 2025 Todos los derechos reservados</p>
             <address>Cancún, QRoo, México</address>
+
         </footer> 
     </body>
 </html>

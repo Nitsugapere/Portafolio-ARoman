@@ -17,11 +17,12 @@ h1, h2{
 p{
     font-family: "Lato", sans-serif;
 }
+
 header {
     text-align: center;
     border: solid #00ffff; 
     margin-top: 60px;
-    padding-bottom: 20px;
+    padding-bottom: 40px;
     background: #1a1a1a; 
 
 }
@@ -46,38 +47,114 @@ header {
 }
 
 #menu-principal a:hover {
-    background-color: #ff00ff; 
-    color: #000000; 
+    background-color: #ff00ff;
+    color: #000000;
+    text-shadow: 0 0 15px #ffffff;
+    box-shadow: 0 0 20px #ff00ff; 
 }
 
-#Bienvenida {
-    background-color: #1a0033; 
-    padding: 30px;
+#bienvenida {
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a0033 100%);
+    padding: 40px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 40px;
+    border: 2px solid #00ffff;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
 }
 
-#Foto-perfil {
-    border-radius: 2px;
+#foto-perfil {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 3px solid #00ffff;
+    object-fit: cover;
+    object-position: center;
+    margin-left: auto;
+    display: block;
+}
+
+#bienvenida aside{
+    clear: both;
+    margin-top: 20px;
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    border-left: 4px solid #ff00ff;
 }
 
 #experiencia {
     background-color: #1a0033; 
-    padding: 30px 40px;
-    border-top: solid #00ffff; 
-
+    padding: 50px 40px;
+    border-top: solid #00ffff 3px;
 }
 
 #lista-proyecto {
     display: flex;
     gap: 30px;
-    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: center;
 }
 
 .Proyecto {
-    border: solid #ff00ff 5px; 
-    width: 30%;
-    border-radius: 10px;
-    padding: auto;
-    background: #1a1a1a; 
+    flex: 1;
+    border: solid #ff00ff 3px;
+    border-radius: 15px;
+    padding: 25px;
+    background: #1a1a1a;
+    min-height: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Proyecto h3 {
+    color: #00ffff;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #ff00ff;
+    padding-bottom: 8px;
+}
+
+.contenido-flexible {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.Proyecto .fecha {
+    margin-top: 0%; 
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.Proyecto p {
+    margin-bottom: 15px;
+    line-height: 1.5;
+}
+
+.contenido-texto {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; 
+}
+
+
+.Proyecto ul {
+    margin: 20px 0 15px 0; 
+    padding-left: 20px;
+    flex-grow: 0; 
+}
+
+.Proyecto li {
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+.Proyecto .bi {
+    font-size: 50px;
+    color: #00ffff;
+    margin-top: auto; 
+    margin-bottom: 10px;
 }
 
 #habilidades {
@@ -98,14 +175,36 @@ header {
     padding: 12px 20px;
     border-radius: 25px;
     text-align: center;
+    font-weight: bold;
+    box-shadow: 0 0 15px rgba(225, 0, 255, 0.5);
+}
+
+.Tecnologia li:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffff;
 }
 
 progress {
-    width: 10%;
+    width: 100%;
     height: 25px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin: 10px 0;
+    border: 2px solid #00ffff;
 }
+
+/*Estilo para la parte vacía de la barra de progreso para navegador Edge o Chrome*/
+progress::-webkit-progress-bar { 
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+
+/*Estilo para la parte llenada de la barra de progreso para navegador Edge o WebKit*/
+progress::-webkit-progress-value {
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border-radius: 8px;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
 #contacto{
     padding: 30px 20px;
     background-color: #1a0033; 
@@ -115,28 +214,78 @@ progress {
 #contacto label{
     font-size: 20px;
     color: #ffffff; 
+    display: block;
+    margin-bottom: 5px;
 }
 
-#contacto input, textarea{
+#contacto input, #contacto textarea{
     font-size: 20px;
     border: solid 1px #ff00ff; 
-    padding: 10px;
-    width: 30% 0;
+    padding: 8px;
+    width: 100%;
     background: #1a1a1a; 
-    color: #ffffff; 
+    color: #ffffff;
+    margin-bottom: 15px;
+    box-sizing: border-box; 
 }
 #contacto button{
     background-color: #ff00ff; 
     color: #000000; 
-    padding: 20px 30px;
+    padding: 15px 25px;
     border: none;
     border-radius: 5px;
-    border: none;
     width: 200px;
     font-size: 20px;
     cursor: pointer;
+    margin-top: 10px;
 }
 
 .campos{
-    clear: both;
+    margin-bottom: 5px;
 }
+
+.iconos-footer {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    margin-bottom: 20px;
+}
+
+.icono-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    border-radius: 50%;
+    color: #000000;
+    text-decoration: none;
+    font-size: 24px;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 10px rgba(255, 0, 255, 0.5);
+}
+
+.icono-footer:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #00ffff;
+    color: #000000;
+}
+
+footer {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+    background-color: #1a1a1a;
+    border-top: 2px solid #00ffff;
+}
+
+footer p, footer address {
+    margin: 5px 0;
+    text-align: center;
+}
+

@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Open index.html",
-            "file": "c:\\Users\\981013390\\OneDrive\\Documentos\\actividades de Rafa\\index.html"
+            "file": "c:\\Users\\981013390\\OneDrive\\Documentos\\AppWeb\\Portafolio\\index.html"
         }
     ]
 }
